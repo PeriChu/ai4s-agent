@@ -1,0 +1,23 @@
+vina:
+  docker_image: "vina:latest"
+  receptor_pdbqt: "runs/${RUN_ID}/docking/receptor.pdbqt"
+  exhaustiveness_fast: 8
+  exhaustiveness_refine: 24
+  num_modes: 10
+  energy_range: 3
+  timeout_s_per_ligand: 60
+
+box:
+  pocket_json: "data/pocket.json"
+
+parallel:
+  vina_jobs: 32
+  batch_size: 250
+  retries: 1
+
+gnina:
+  enabled: true
+  docker_image: "gnina:latest"
+  gpu_jobs: 1
+  timeout_s_per_ligand: 120
+  topk_after_vina_refine: 1500

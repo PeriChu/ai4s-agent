@@ -1,0 +1,13 @@
+run:
+  run_id: ""  # leave empty to auto-generate in orchestrator
+  seed: 20260519
+
+target:
+  pdb_path: "data/target.pdb"
+
+pocket:
+  mode: "fpocket"         # fpocket | manual
+  fpocket_exe: "fpocket"  # host command
+  margin_A: 5.0
+  min_size_A: 18.0
+  output_json: "data/pocket.json"

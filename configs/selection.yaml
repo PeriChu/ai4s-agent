@@ -1,0 +1,18 @@
+selection:
+  export_n: 200
+
+  weights:
+    vina: 1.0
+    gnina: 0.7
+    synth_success: 2.0
+    steps_penalty: 0.2
+    sa_penalty: 0.5
+
+  constraints:
+    max_heavy_atoms: 55
+    max_steps: 6
+    require_retro_success: true
+
+  diversity:
+    enabled: true
+    scaffold_max_per_bucket: 5

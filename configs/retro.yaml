@@ -1,0 +1,12 @@
+aizynth:
+  docker_image: "aizynthfinder:latest"
+  model_dir: "data/models/aizynth"
+  stock_smiles: "data/purchasable.smi"
+  max_steps: 6
+  time_limit_s: 60
+  topk_routes: 1
+
+parallel:
+  retro_jobs: 16
+  batch_size: 50
+  retries: 0
